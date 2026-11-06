@@ -121,6 +121,12 @@ This library adopts general workflow ideas found in public Agent Skills reposito
 
 Referenced public projects include TheCraigHewitt sales skills, Microsoft's B2B Outreach Suite, Corey Haines' prospecting skill, and Saber Skills.
 
+## Version
+
+**v1.0 — Finalized**
+
+The current release contains 21 connected Skills plus separate company and sales-context configuration. This version is considered the baseline production release. Future changes should be versioned rather than continuously appended.
+
 ## Expansion Principle
 
 Add a skill only when it represents a repeatable workflow that materially improves apparel export sales. Prefer improving orchestration, evidence quality, and handoffs over simply increasing the skill count.
