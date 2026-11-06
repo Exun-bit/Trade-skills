@@ -1,73 +1,87 @@
 # Apparel Trade Skills
 
-A reusable personal toolkit for apparel export sales. The skills are company-agnostic and can be used across employers, factories, and brands. Current company details are maintained separately in the configuration file.
+A reusable personal toolkit for apparel export sales. The skills are company-agnostic and can be used across employers, factories, and brands. Current company details are maintained separately in configuration files.
+
+## Architecture
+
+The library is organized as a connected sales system rather than a collection of isolated prompts:
+
+1. **Context** — current company profile + reusable sales context
+2. **Research** — prospecting, customer research, competitor profiling, buyer personas
+3. **Signals** — buying signals and lead scoring
+4. **Outreach** — cold email, social media, multi-channel sequences
+5. **Deal Execution** — communication, quotation, sampling, negotiation, deal coaching
+6. **Operations** — Alibaba, lead management, pipeline review, analytics
+7. **Learning** — win/loss analysis and feedback into future sales decisions
+8. **Visual / Technical** — garment technical support and apparel visual branding
 
 ## Modules
 
-1. **Prospecting** — identify and qualify apparel brands and potential buyers.
-2. **Customer Research** — analyze a brand's products, positioning, and potential sourcing needs.
-3. **Competitor Profiling** — compare apparel manufacturers using verifiable public information.
-4. **Cold Email & Follow-up** — prepare personalized outreach and follow-up messages.
-5. **Social Media** — plan platform-specific content for Instagram, Facebook, and LinkedIn.
-6. **Alibaba Operations** — improve product listings, keywords, storefront content, traffic, and inquiry conversion.
-7. **Customer Communication** — handle buyer inquiries, quotations, negotiation, sampling, objections, complaints, and follow-up.
-8. **Garment Technical Support** — interpret fabrics, construction, decoration, measurements, washes, and tech-pack terminology.
-9. **Lead Management** — maintain lead records, pipeline stages, scoring, follow-ups, and reactivation.
-10. **Apparel Visual Branding** — create or edit product visuals while preserving garment accuracy and handling third-party branding appropriately.
-11. **Pricing & Quotation** — structure quotations, identify cost drivers, and protect commercial accuracy.
-12. **Sampling & Order Execution** — control sample approval, pre-production confirmation, production checkpoints, and shipment preparation.
-13. **Negotiation & Objection Handling** — diagnose buyer objections and negotiate with controlled concessions.
-14. **Sales Analytics** — analyze the sales funnel, Alibaba performance, outreach response, and conversion bottlenecks.
+1. Prospecting
+2. Customer Research
+3. Competitor Profiling
+4. Cold Email & Follow-up
+5. Social Media
+6. Alibaba Operations
+7. Customer Communication
+8. Garment Technical Support
+9. Lead Management
+10. Apparel Visual Branding
+11. Pricing & Quotation
+12. Sampling & Order Execution
+13. Negotiation & Objection Handling
+14. Sales Analytics
+15. Sales Context & ICP
+16. Buying Signals
+17. Outbound Sequence
+18. Deal Coaching
+19. Win-Loss Analysis
+20. Pipeline Review
+21. Sales Workflow Orchestrator
 
-## Company Configuration
+## Configuration
 
-Use `config/company-profile.md` as the single source of truth for the user's current employer or represented supplier.
+- `config/company-profile.md` — current employer / represented supplier. This is the only place where company-specific identity and commercial facts should live.
+- `config/sales-context.md` — stable user-level sales motion, target markets, prospect types, personalization rules, and data-quality principles.
 
-When the user changes companies:
-- Update the company profile using the new website and information supplied by the user.
-- Re-check all company-specific claims, contacts, URLs, products, and commercial terms.
-- Do not carry over the previous company's details unless the user explicitly confirms they still apply.
-- Keep the skills themselves generic; do not rewrite them for each employer.
+When the user changes companies, update the company profile first. Do not rewrite the skills or carry over old company facts unless explicitly confirmed.
 
-## Global Operating Rules
+## Core Rules
 
-- Keep outreach concise, natural, personalized, and non-pushy.
-- Label unknown information clearly; never invent contacts, capabilities, certifications, customers, MOQ, lead times, or production capacity.
-- Separate verified facts from research hypotheses.
-- Grade leads A/B/C and recommend a next follow-up date.
-- Do not send messages or take external actions without the user's explicit approval.
-- Use the current company profile only when a task requires company-specific information.
-- Preserve the user's commercial facts when rewriting buyer messages.
-- For technical questions, distinguish visual guesses from specifications that require factory or sample confirmation.
-- For visual work, preserve the original garment unless the user explicitly requests a design change.
-- For pricing, negotiation, and order execution, distinguish confirmed commercial terms from assumptions.
-- Use measurable data when diagnosing sales or Alibaba performance.
+- Evidence before assumptions.
+- Buying signal is separate from ICP fit.
+- Verify contact data before outreach when possible.
+- Never invent capabilities, certifications, customers, MOQ, lead times, prices, production capacity, or proof points.
+- Separate verified facts, prospect-reported facts, hypotheses, and unknowns.
+- Keep outreach concise, specific, human, and low-pressure.
+- One clear CTA per outreach message.
+- Do not send or perform external actions without explicit user approval.
+- Preserve approved garment and product details during technical and visual work.
+- Use measurable outcomes to improve the sales process.
 
-## Typical Workflow
+## Workflow
 
 ```
-Prospecting
-   ↓
-Customer Research
-   ↓
+Context / ICP
+      ↓
+Prospecting → Customer Research → Buying Signals
+      ↓
 Lead Qualification
-   ↓
-Cold Email / Social Outreach
-   ↓
+      ↓
+Cold Email / Social / Outbound Sequence
+      ↓
 Customer Communication
-   ↓
-Quotation / Sample
-   ↓
-Technical Confirmation
-   ↓
-Negotiation
-   ↓
+      ↓
+Quotation / Sample / Technical Confirmation
+      ↓
+Negotiation → Deal Coaching
+      ↓
 Order Execution
-   ↓
-Lead Management / Reorder / Reactivation
+      ↓
+Lead Management → Pipeline Review → Win-Loss Analysis
+      ↺
+Future ICP / Outreach / Pricing improvements
 ```
-
-Alibaba Operations, Visual Branding, and Sales Analytics support the workflow throughout the process.
 
 ## Repository Structure
 
@@ -75,7 +89,8 @@ Alibaba Operations, Visual Branding, and Sales Analytics support the workflow th
 .
 ├── README.md
 ├── config/
-│   └── company-profile.md
+│   ├── company-profile.md
+│   └── sales-context.md
 └── skills/
     ├── 01-prospecting/SKILL.md
     ├── 02-customer-research/SKILL.md
@@ -90,9 +105,22 @@ Alibaba Operations, Visual Branding, and Sales Analytics support the workflow th
     ├── 11-pricing-and-quotation/SKILL.md
     ├── 12-sampling-and-order-execution/SKILL.md
     ├── 13-negotiation-and-objections/SKILL.md
-    └── 14-sales-analytics/SKILL.md
+    ├── 14-sales-analytics/SKILL.md
+    ├── 15-sales-context-and-icp/SKILL.md
+    ├── 16-buying-signals/SKILL.md
+    ├── 17-outbound-sequence/SKILL.md
+    ├── 18-deal-coaching/SKILL.md
+    ├── 19-win-loss-analysis/SKILL.md
+    ├── 20-pipeline-review/SKILL.md
+    └── 21-sales-workflow-orchestrator/SKILL.md
 ```
+
+## External Skill Research
+
+This library adopts general workflow ideas found in public Agent Skills repositories, while keeping the implementation original and tailored to apparel export sales. Useful patterns include shared sales context, buyer personas, signal-based prioritization, multi-channel sequencing, deal coaching, pipeline review, and win/loss feedback loops.
+
+Referenced public projects include TheCraigHewitt sales skills, Microsoft's B2B Outreach Suite, Corey Haines' prospecting skill, and Saber Skills.
 
 ## Expansion Principle
 
-Add new skills only when they represent a repeatable workflow that can be reused across apparel export sales tasks. Keep company-specific data in configuration rather than embedding it into skill instructions.
+Add a skill only when it represents a repeatable workflow that materially improves apparel export sales. Prefer improving orchestration, evidence quality, and handoffs over simply increasing the skill count.
