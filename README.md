@@ -9,6 +9,11 @@ A reusable personal toolkit for apparel export sales. The skills are company-agn
 3. **Competitor Profiling** — compare apparel manufacturers using verifiable public information.
 4. **Cold Email & Follow-up** — prepare personalized outreach and follow-up messages.
 5. **Social Media** — plan platform-specific content for Instagram, Facebook, and LinkedIn.
+6. **Alibaba Operations** — improve product listings, keywords, storefront content, traffic, and inquiry conversion.
+7. **Customer Communication** — handle buyer inquiries, quotations, negotiation, sampling, objections, complaints, and follow-up.
+8. **Garment Technical Support** — interpret fabrics, construction, decoration, measurements, washes, and tech-pack terminology.
+9. **Lead Management** — maintain lead records, pipeline stages, scoring, follow-ups, and reactivation.
+10. **Apparel Visual Branding** — create or edit product visuals while preserving garment accuracy and handling third-party branding appropriately.
 
 ## Company Configuration
 
@@ -28,6 +33,35 @@ When the user changes companies:
 - Grade leads A/B/C and recommend a next follow-up date.
 - Do not send messages or take external actions without the user's explicit approval.
 - Use the current company profile only when a task requires company-specific information.
+- Preserve the user's commercial facts when rewriting buyer messages.
+- For technical questions, distinguish visual guesses from specifications that require factory or sample confirmation.
+- For visual work, preserve the original garment unless the user explicitly requests a design change.
+
+## Typical Workflow
+
+```
+Prospecting
+   ↓
+Customer Research
+   ↓
+Lead Qualification
+   ↓
+Cold Email / Social Outreach
+   ↓
+Customer Communication
+   ↓
+Quotation / Sample
+   ↓
+Technical Confirmation
+   ↓
+Negotiation
+   ↓
+Order
+   ↓
+Lead Management / Reorder / Reactivation
+```
+
+Alibaba Operations and Visual Branding support the workflow throughout the process.
 
 ## Repository Structure
 
@@ -41,5 +75,14 @@ When the user changes companies:
     ├── 02-customer-research/SKILL.md
     ├── 03-competitor-profiling/SKILL.md
     ├── 04-cold-email/SKILL.md
-    └── 05-social-media/SKILL.md
+    ├── 05-social-media/SKILL.md
+    ├── 06-alibaba-operations/SKILL.md
+    ├── 07-customer-communication/SKILL.md
+    ├── 08-garment-technical-support/SKILL.md
+    ├── 09-lead-management/SKILL.md
+    └── 10-apparel-visual-branding/SKILL.md
 ```
+
+## Expansion Principle
+
+Add new skills only when they represent a repeatable workflow that can be reused across apparel export sales tasks. Keep company-specific data in configuration rather than embedding it into skill instructions.
