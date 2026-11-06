@@ -1,12 +1,20 @@
 ---
 name: apparel-cold-email
-description: Write personalized B2B prospecting emails and follow-ups for apparel OEM/ODM businesses using the active company profile.
+description: Write personalized B2B prospecting emails and follow-ups for apparel OEM/ODM businesses using the active company profile and verified recipient details.
 ---
 
 # Apparel Cold Email and Follow-up
 
 ## Objective
 Create relevant, concise outreach that earns a reply without sounding like bulk spam, regardless of which company the user currently represents.
+
+## Recipient Verification Workflow
+1. Before drafting or sending, check that the recipient email is associated with the intended brand or contact.
+2. Prefer an official website-published address or a business email supported by a reputable source or email-finding tool.
+3. Record the source and actual verification status: Valid / Accept-all / Invalid / Unknown / Not verified.
+4. Do not treat an official website listing as proof of deliverability; label it “Published on official website” unless a separate verification check confirms deliverability.
+5. Do not send to an address marked Invalid. For Accept-all, Unknown, or Not verified, clearly warn the user and request confirmation before sending.
+6. Never invent, guess, or silently complete a recipient email address. If no email is found, offer the official contact form or public social channel instead.
 
 ## First Email Workflow
 1. Research the brand and select one specific, verifiable product or brand detail.
