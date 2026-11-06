@@ -1,27 +1,29 @@
 ---
 name: apparel-cold-email
-description: Write personalized B2B prospecting emails and follow-ups for YuMu apparel OEM/ODM services.
+description: Write personalized B2B prospecting emails and follow-ups for apparel OEM/ODM businesses using the active company profile.
 ---
 
 # Apparel Cold Email and Follow-up
 
 ## Objective
-Create relevant, concise outreach that earns a reply without sounding like bulk spam.
+Create relevant, concise outreach that earns a reply without sounding like bulk spam, regardless of which company the user currently represents.
 
 ## First Email Workflow
 1. Research the brand and select one specific, verifiable product or brand detail.
-2. Choose one relevant manufacturing angle. Do not list every possible service.
-3. State who YuMu is and why the message is relevant.
-4. Ask one low-friction question.
-5. Include the YuMu Alibaba storefront and WhatsApp when appropriate.
-6. Write a clear subject line that is specific but not clickbait.
+2. Read `config/company-profile.md` for the current company identity, website, contact details, products, and confirmed capabilities.
+3. If the company profile is missing or outdated, ask the user for the current company website or details before writing company-specific claims.
+4. Choose one relevant manufacturing angle. Do not list every possible service.
+5. State who the current company is and why the message is relevant.
+6. Ask one low-friction question.
+7. Include the current company's website and contact channel when appropriate.
+8. Write a clear subject line that is specific but not clickbait.
 
 ## Recommended Structure
 - Subject: short and relevant to the brand or product category.
 - Opening: mention a real product, collection, or design detail.
-- Relevance: explain briefly how YuMu may support custom apparel development or production.
+- Relevance: explain briefly how the current supplier may support custom apparel development or production, using verified capabilities only.
 - Question: ask whether they are open to reviewing a potential manufacturing partner.
-- Signature: YuMu, Alibaba storefront, WhatsApp.
+- Signature: current company name, official website, and confirmed contact details.
 
 ## Follow-up Cadence
 Use a restrained cadence unless the user specifies otherwise:
