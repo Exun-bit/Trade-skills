@@ -14,6 +14,10 @@ A reusable personal toolkit for apparel export sales. The skills are company-agn
 8. **Garment Technical Support** — interpret fabrics, construction, decoration, measurements, washes, and tech-pack terminology.
 9. **Lead Management** — maintain lead records, pipeline stages, scoring, follow-ups, and reactivation.
 10. **Apparel Visual Branding** — create or edit product visuals while preserving garment accuracy and handling third-party branding appropriately.
+11. **Pricing & Quotation** — structure quotations, identify cost drivers, and protect commercial accuracy.
+12. **Sampling & Order Execution** — control sample approval, pre-production confirmation, production checkpoints, and shipment preparation.
+13. **Negotiation & Objection Handling** — diagnose buyer objections and negotiate with controlled concessions.
+14. **Sales Analytics** — analyze the sales funnel, Alibaba performance, outreach response, and conversion bottlenecks.
 
 ## Company Configuration
 
@@ -36,6 +40,8 @@ When the user changes companies:
 - Preserve the user's commercial facts when rewriting buyer messages.
 - For technical questions, distinguish visual guesses from specifications that require factory or sample confirmation.
 - For visual work, preserve the original garment unless the user explicitly requests a design change.
+- For pricing, negotiation, and order execution, distinguish confirmed commercial terms from assumptions.
+- Use measurable data when diagnosing sales or Alibaba performance.
 
 ## Typical Workflow
 
@@ -56,12 +62,12 @@ Technical Confirmation
    ↓
 Negotiation
    ↓
-Order
+Order Execution
    ↓
 Lead Management / Reorder / Reactivation
 ```
 
-Alibaba Operations and Visual Branding support the workflow throughout the process.
+Alibaba Operations, Visual Branding, and Sales Analytics support the workflow throughout the process.
 
 ## Repository Structure
 
@@ -80,7 +86,11 @@ Alibaba Operations and Visual Branding support the workflow throughout the proce
     ├── 07-customer-communication/SKILL.md
     ├── 08-garment-technical-support/SKILL.md
     ├── 09-lead-management/SKILL.md
-    └── 10-apparel-visual-branding/SKILL.md
+    ├── 10-apparel-visual-branding/SKILL.md
+    ├── 11-pricing-and-quotation/SKILL.md
+    ├── 12-sampling-and-order-execution/SKILL.md
+    ├── 13-negotiation-and-objections/SKILL.md
+    └── 14-sales-analytics/SKILL.md
 ```
 
 ## Expansion Principle
