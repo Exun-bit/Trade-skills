@@ -6,7 +6,7 @@ description: Research an apparel brand before outreach and identify relevant, ev
 # Apparel Customer Research
 
 ## Objective
-Prepare a concise brand brief that makes YuMu's outreach specific to the prospect's products and positioning.
+Prepare a concise brand brief that makes outreach specific to the prospect's products and positioning.
 
 ## Research Workflow
 1. Review the official website, product pages, About page, shipping/returns information, and wholesale or contact pages.
@@ -15,7 +15,7 @@ Prepare a concise brand brief that makes YuMu's outreach specific to the prospec
 4. Estimate positioning from observable product prices and presentation. Clearly label this as an estimate, not internal business data.
 5. Look for launch frequency, seasonal drops, collaborations, restocks, and expansion into new categories.
 6. Identify plausible manufacturing pain points only as hypotheses, such as consistency across drops, custom wash development, low-volume launches, or complex decoration.
-7. Match YuMu's proposed value proposition only to capabilities confirmed by the user or reliable company information.
+7. Read `config/company-profile.md` and match the current supplier's value proposition only to capabilities confirmed in that profile or by reliable company information.
 8. Prepare a personalized outreach angle and one concise opening message.
 
 ## Brand Brief Format
@@ -28,7 +28,7 @@ Prepare a concise brand brief that makes YuMu's outreach specific to the prospec
 - Verified facts
 - Research hypotheses (clearly labeled)
 - Missing information
-- Recommended YuMu approach
+- Relevant capabilities of the current supplier (verified only)
 - Personalized first-contact message
 
 ## Rules
