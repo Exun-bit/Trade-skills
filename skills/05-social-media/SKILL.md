@@ -1,12 +1,17 @@
 ---
 name: apparel-social-media
-description: Create platform-specific B2B social content for YuMu to attract apparel brands and custom clothing buyers.
+description: Create platform-specific B2B social content for an apparel supplier using verified company information.
 ---
 
 # Apparel Social Media Marketing
 
 ## Objective
-Create credible content that demonstrates YuMu's apparel development and manufacturing relevance to streetwear and independent fashion brands.
+Create credible content that demonstrates the current supplier's apparel development and manufacturing relevance to streetwear and independent fashion brands.
+
+## Preparation
+1. Read `config/company-profile.md` for the current company identity, website, products, target market, and confirmed capabilities.
+2. If the profile is incomplete, avoid company-specific claims and ask for the missing details when necessary.
+3. Use only genuine product images, factory footage, approved customer projects, and verifiable claims.
 
 ## Content Pillars
 1. Product development: tech packs, sampling, fit, fabric selection, and details.
